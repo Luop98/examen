@@ -95,12 +95,24 @@ class HomePage extends StatelessWidget {
                             ),
                             Container(
                                 margin: const EdgeInsets.all(10),
-                                child: ElevatedButton(
-                                  onPressed: () {Navigator.push(context, MaterialPageRoute(builder: ((context) => AvatarPage()))},
-                                  child: Text("LOGIN"),
-                                  style: ElevatedButton.styleFrom(
-                                      minimumSize: Size(350, 40)),
-                                )),
+                              child: Column(
+                    children: [
+                      ListTile(
+                        onTap: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => AvatarPage()),
+                          );
+                        },
+                        title: const Text(
+                          "Login",
+                          style: TextStyle(
+                              fontSize: 25, fontWeight: FontWeight.bold),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
+                  )),
                           ],
                         ))
                   ],
