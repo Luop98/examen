@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
+
 
 class AvatarPage extends StatelessWidget {
   const AvatarPage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: HomePage(),
+    return Scaffold(
+      
     );
   }
 }
